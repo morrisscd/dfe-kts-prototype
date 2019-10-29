@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dfe-kts-prototype';
+  searchType = 'Search for pupil information';
+
+
+  selectSearchType(data: string) {
+    //console.log(data);
+    this.searchType = data;
+  }
+
 }
