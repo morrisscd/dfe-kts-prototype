@@ -11,6 +11,10 @@ export class AppComponent {
   
   constructor(public searchService: SearchService) {}
 
-  
+  //ar temp = searchService
+  onSelectSearch(data: string){
+    console.log('hello');
+    this.searchService.selectSearchType(data);
+  }
 
 }

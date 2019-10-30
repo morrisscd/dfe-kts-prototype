@@ -8,13 +8,13 @@ export class SearchService {
  //private posts: Post[] = [];
  //private postsUpdated = new Subject<Post[]>();
 
- constructor(private http: HttpClient) {}
+ //constructor(private http: HttpClient) {}
   
  searchType = 'Search for pupil information';
 
  selectSearchType(data: string) {
-    //console.log(data);
+    console.log(data);
     this.searchType = data;
  }
-
+ 
 }
