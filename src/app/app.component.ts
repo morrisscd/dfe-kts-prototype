@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchService } from 'src/app/search/search-service';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dfe-kts-prototype';
-  searchType = 'Search for pupil information';
+  
+  constructor(public searchService: SearchService) {}
 
-
-  selectSearchType(data: string) {
-    //console.log(data);
-    this.searchType = data;
-  }
+  
 
 }
