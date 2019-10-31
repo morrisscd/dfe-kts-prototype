@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 
 import { AppComponent } from './app.component';
-import { SearchSchoolComponent } from './search/search-school/search-school.component';
-import { SearchLAComponent } from './search/search-la/search-la.component';
 import { SearchResultsComponent } from './search/search-results/search-results.component';
+import { SearchTypeComponent } from './search/search-type/search-type.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchSchoolComponent,
-    SearchLAComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    SearchTypeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

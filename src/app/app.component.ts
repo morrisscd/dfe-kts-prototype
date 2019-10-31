@@ -9,12 +9,7 @@ import { SearchService } from 'src/app/search/search-service';
 export class AppComponent {
   title = 'dfe-kts-prototype';
   
-  constructor(public searchService: SearchService) {}
+  constructor() {}
 
-  //ar temp = searchService
-  onSelectSearch(data: string){
-    console.log('hello');
-    this.searchService.selectSearchType(data);
-  }
-
+  
 }
