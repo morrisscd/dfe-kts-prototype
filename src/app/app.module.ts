@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { SearchResultsComponent } from './search/search-results/search-results.component';
 import { SearchTypeComponent } from './search/search-type/search-type.component';
 import { HeaderComponent } from './header/header.component';
+import { LinksComponent } from './links/links.component';
+import { SearchParametersComponent } from './search-parameters/search-parameters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchResultsComponent,
     SearchTypeComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinksComponent,
+    SearchParametersComponent
   ],
   imports: [
     BrowserModule,
