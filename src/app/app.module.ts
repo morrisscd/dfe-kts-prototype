@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SearchResultsComponent } from './search/search-results/search-results.component';
 import { SearchTypeComponent } from './search/search-type/search-type.component';
 import { HeaderComponent } from './header/header.component';
 import { LinksComponent } from './links/links.component';
 import { SearchParametersComponent } from './search-parameters/search-parameters.component';
+import { ResultsListComponent } from './results-list/results-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchResultsComponent,
     SearchTypeComponent,
     HeaderComponent,
     LinksComponent,
-    SearchParametersComponent
+    SearchParametersComponent,
+    ResultsListComponent
   ],
   imports: [
     BrowserModule,

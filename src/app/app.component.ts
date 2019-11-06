@@ -8,8 +8,7 @@ import { SearchService } from 'src/app/search/search-service';
 })
 export class AppComponent {
   title = 'dfe-kts-prototype';
-  
+
   constructor() {}
 
-  
 }

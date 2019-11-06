@@ -1,0 +1,12 @@
+<div class="govuk-grid-column-one-half">
+  <h3 class="govuk-heading-m blue-border">Results</h3>
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
+      <tr *ngFor="let pupil of pupilData" class="govuk-table__row">
+        <!-- <th scope="row" class="govuk-table__header">{{pupil.pupilData}}</th> -->
+        <td class="govuk-table__cell">{{pupil.firstName}} {{pupil.surname}} DOB {{pupil.dob}} ({{pupil.gender}})</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
