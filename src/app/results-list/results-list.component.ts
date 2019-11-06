@@ -22,6 +22,12 @@ export class ResultsListComponent implements OnInit {
         surname: 'Green',
         dob: '02/03/2008',
         gender: 'F'
+      },
+      {
+        firstName: 'David',
+        surname: 'Black',
+        dob: '03/06/2008',
+        gender: 'M'
       }];
   }
 

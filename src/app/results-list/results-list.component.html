@@ -1,12 +1,13 @@
 <div class="govuk-grid-column-one-half">
   <h3 class="govuk-heading-m blue-border">Results</h3>
-  <table class="govuk-table">
-    <tbody class="govuk-table__body">
-      <tr *ngFor="let pupil of pupilData" class="govuk-table__row">
-        <!-- <th scope="row" class="govuk-table__header">{{pupil.pupilData}}</th> -->
-        <td class="govuk-table__cell">{{pupil.firstName}} {{pupil.surname}} DOB {{pupil.dob}} ({{pupil.gender}})</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="govuk-form-group">
+      <div *ngFor="let pupil of pupilData" class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item checkbox-space">
+            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                {{pupil.firstName}} {{pupil.surname}} DOB {{pupil.dob}} ({{pupil.gender}})
+            </label>
+          </div>
+      </div>
+  </div>
 </div>
-
