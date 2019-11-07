@@ -1,0 +1,18 @@
+<div class="govuk-grid-column-one-half">
+    <h3 class="govuk-heading-m blue-border">Results</h3>
+    <div class="govuk-form-group">
+        <div *ngFor="let pupil of pupilDataDetail" class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item checkbox-space">
+              <input class="govuk-checkboxes__input" id="" name="" type="checkbox" value="">
+              <label class="govuk-label govuk-checkboxes__label" for="">
+                  {{pupil.firstName}} {{pupil.surname}} DOB {{pupil.dob}} ({{pupil.gender}})
+              </label>
+            </div>
+            <ul class="govuk-list">
+                <li *ngFor="let dataset of pupil.datasets">
+                  <a class="govuk-link" href="#">{{dataset}}</a>
+                </li>
+            </ul>
+           </div>
+    </div>
+</div>

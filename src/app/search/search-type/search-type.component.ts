@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../search-service';
+//import { SearchService } from '../../results/results.service';
 
 @Component({
   selector: 'app-search-type',
@@ -11,7 +11,7 @@ export class SearchTypeComponent implements OnInit {
   searchType = "Search for pupil information (School)";
 
   constructor(private searchService: SearchService ) { }
-  //searchType: string = "hello there!"; 
+  //searchType: string = "hello there!";
   // @Output() messageEvent = new EventEmitter<string>();
  ngOnInit() {
    this.searchService.$searchType
@@ -19,7 +19,7 @@ export class SearchTypeComponent implements OnInit {
       this.searchType = data;
       console.log(data);
     })
-   
+
  }
 
 }

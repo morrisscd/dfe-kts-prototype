@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { SearchTypeComponent } from './search/search-type/search-type.component';
 import { HeaderComponent } from './header/header.component';
 import { LinksComponent } from './links/links.component';
-import { SearchParametersComponent } from './search-parameters/search-parameters.component';
-import { ResultsListComponent } from './results-list/results-list.component';
+import { SearchParametersComponent } from './search/search-parameters/search-parameters.component';
+import { ResultsListComponent } from './results/results-list/results-list.component';
+import { ResultsListDetailComponent } from './results/results-list-detail/results-list-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ResultsListComponent } from './results-list/results-list.component';
     HeaderComponent,
     LinksComponent,
     SearchParametersComponent,
-    ResultsListComponent
+    ResultsListComponent,
+    ResultsListDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SearchService } from 'src/app/search/search-service';
+import { SearchService } from 'src/app/results/results.service';
 
 @Component({
   selector: 'app-root',
