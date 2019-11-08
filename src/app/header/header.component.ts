@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../results/results.service';
+import { SearchService } from '../search/search.service';
 
 @Component({
   selector: 'app-header',
@@ -13,8 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  searchType(data: string){
-   //console.log(data);
+  searchType(data: string) {
     this.searchService.getSearchType(data);
   }
 

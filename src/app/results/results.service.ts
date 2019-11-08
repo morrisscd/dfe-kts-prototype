@@ -12,9 +12,10 @@ export class ResultsService {
  constructor(private http: HttpClient) {}
 
  getResults() {
-    this.http.get<{message: string, results: Results[]}>("http://localhost:3000/api/results")
+    this.http.get<Results[]>('http://localhost:3000/api/results')
       .subscribe((resultsData) => {
-        this.results =  resultsData.results;
+        console.log(resultsData);
+        console.log('in get');
       });
  }
 

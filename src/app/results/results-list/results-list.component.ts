@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { ResultsService } from '../results.service';
-
 
 @Component({
   selector: 'app-results-list',
@@ -12,8 +10,12 @@ export class ResultsListComponent implements OnInit {
 
   constructor(public resultsService: ResultsService) {}
 
+  pupilData: any;
+
   ngOnInit() {
-    this.resultsService.getResults();
+    console.log('getting results');
+    console.log(this.resultsService.getResults());
+    //console.log(this.pupilData);
   }
 
 }
