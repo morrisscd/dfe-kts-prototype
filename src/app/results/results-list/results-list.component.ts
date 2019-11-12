@@ -14,8 +14,10 @@ export class ResultsListComponent implements OnInit {
 
   ngOnInit() {
     console.log('getting results');
-    console.log(this.resultsService.getResults());
-    //console.log(this.pupilData);
+    //console.log(this.resultsService.getResults());
+    this.resultsService.getResults()
+     .subscribe(data => this.pupilData = data);
+  
   }
 
 }
