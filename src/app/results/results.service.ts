@@ -7,8 +7,6 @@ export class ResultsService {
 
  $searchType = new EventEmitter();
 
- private results: Results[] = [];
-
  constructor(private http: HttpClient) {}
 
  getResults() {

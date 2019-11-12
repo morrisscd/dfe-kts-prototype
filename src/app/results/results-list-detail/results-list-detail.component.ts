@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ResultsService } from '../results.service';
+
 
 @Component({
   selector: 'app-results-list-detail',
@@ -9,45 +11,11 @@ export class ResultsListDetailComponent implements OnInit {
 
   pupilDataDetail: any;
 
-  constructor() {
-    this.pupilDataDetail = [
-      {
-        firstName: 'Robert',
-        surname: 'Smith',
-        dob: '01/02/2007',
-        gender: 'M',
-        datasets: [
-          'CTF XML',
-          'Year 1 Phonics',
-          'KS1',
-          'KS2'
-        ]
-      },
-      {
-        firstName: 'Sally',
-        surname: 'Green',
-        dob: '02/03/2008',
-        gender: 'F',
-        datasets: [
-          'CTF XML',
-          'KS1',
-          'KS2',
-          'KS3'
-        ]
-      },
-      {
-        firstName: 'David',
-        surname: 'Black',
-        dob: '03/06/2008',
-        gender: 'M',
-        datasets: [
-          'CTF XML',
-          'KS1'
-        ]
-      }];
-  }
+  constructor(public resultsService: ResultsService) {}
 
   ngOnInit() {
+    this.resultsService.getResults()
+     .subscribe(data => this.pupilDataDetail = data);
   }
 
 }
