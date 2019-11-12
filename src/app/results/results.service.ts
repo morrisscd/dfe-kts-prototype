@@ -13,11 +13,6 @@ export class ResultsService {
 
  getResults() {
     return this.http.get<Results[]>('http://localhost:3000/api/results')
-      // .subscribe((resultsData) => {
-      //  // console.log(resultsData);
-      // //  console.log('in get');
-      //   this.results = resultsData;
-      // });
  }
 
 }
