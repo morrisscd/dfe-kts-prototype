@@ -1,0 +1,43 @@
+{
+  "name": "hotels-quickstart",
+  "fields": [
+      {
+          "name": "UPN",
+          "type": "Edm.String",
+          "key": true,
+          "filterable": true
+      },
+      {
+          "name": "Forename",
+          "type": "Edm.String",
+          "key": true,
+          "filterable": true
+      },
+      {
+          "name": "Surname",
+          "type": "Edm.String",
+          "searchable": true,
+          "filterable": false,
+          "sortable": true,
+          "facetable": false
+      },
+      {
+          "name": "DOB",
+          "type": "Edm.String",
+          "searchable": true,
+          "filterable": false,
+          "sortable": false,
+          "facetable": false,
+          "analyzer": "en.lucene"
+      }
+  ],
+  "suggesters": [
+      {
+          "name": "sg",
+          "searchMode": "analyzingInfixMatching",
+          "sourceFields": [
+              "HotelName"
+          ]
+      }
+  ]
+}
