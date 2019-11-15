@@ -13,7 +13,7 @@ export class ResultsListComponent implements OnInit {
   pupilData: any;
 
   ngOnInit() {
-    this.resultsService.getResults()
+    this.resultsService.getResults('pupil')
      .subscribe(data => this.pupilData = data);
   }
 

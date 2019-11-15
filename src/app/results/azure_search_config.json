@@ -1,5 +1,5 @@
 {
-  "serviceName" : "https://ktstest.search.windows.net",
+  "serviceName" : "ktstest",
   "adminKey" : "A61C70A7AB48F0C26B1CEE4B19029C59",
   "queryKey" : "F06796B62860DC3768870DE025D9F1FB",
   "indexName" : "hotels-quickstart"

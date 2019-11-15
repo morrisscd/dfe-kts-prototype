@@ -14,8 +14,8 @@ export class ResultsListDetailComponent implements OnInit {
   constructor(public resultsService: ResultsService) {}
 
   ngOnInit() {
-    this.resultsService.getResults()
-     .subscribe(data => this.pupilDataDetail = data);
+    //this.resultsService.getResults()
+     //.subscribe(data => this.pupilDataDetail = data);
   }
 
 }
